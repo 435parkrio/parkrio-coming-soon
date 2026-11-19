@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="파크리오 규약·규정 챗봇을 준비하고 있습니다.">
+  <meta name="theme-color" content="#f3f6f3">
+  <title>준비 중 · 파크리오 규약·규정 챗봇</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Pretendard", "Noto Sans KR", "Malgun Gothic", sans-serif;
+      color: #16382e;
+      background: #f3f6f3;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      min-height: 100svh;
+      display: grid;
+      place-items: center;
+      padding: clamp(16px, 5vw, 60px);
+      background: radial-gradient(ellipse at 50% 16%, #fff 0%, transparent 65%);
+    }
+    main {
+      width: min(100%, 600px);
+      padding: clamp(30px, 7vw, 64px) clamp(20px, 6vw, 60px);
+      border: 1px solid #dae5dd;
+      border-radius: clamp(24px, 5vw, 40px);
+      background: #fff;
+      box-shadow: 0 22px 56px #16382e0d;
+      text-align: center;
+    }
+    .art {
+      width: min(100%, 300px);
+      aspect-ratio: 5 / 3;
+      position: relative;
+      isolation: isolate;
+      margin: 0 auto clamp(25px, 5vw, 38px);
+      overflow: hidden;
+      border-radius: 26px;
+      background: linear-gradient(155deg, #e1efe7, #f5f8e9);
+    }
+    .sun {
+      position: absolute;
+      width: 17%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: #f7db90;
+      top: 17%;
+      left: 15%;
+    }
+    .hill {
+      position: absolute;
+      inset: 64% -8% -55% 17%;
+      border-radius: 50%;
+      background: #c1dcca;
+      transform: rotate(-9deg);
+    }
+    .hill.front {
+      inset: 76% 27% -50% -20%;
+      background: #aacbb7;
+      transform: rotate(8deg);
+      z-index: 2;
+    }
+    .tower {
+      position: absolute;
+      bottom: 19%;
+      left: 36%;
+      width: 22%;
+      height: 61%;
+      border-radius: 7px 7px 0 0;
+      background: #6e9d86;
+      z-index: 1;
+    }
+    .tower.short {
+      left: 22%;
+      width: 19%;
+      height: 41%;
+      background: #8fb59f;
+    }
+    .tower::after {
+      content: "";
+      position: absolute;
+      inset: 16% 17% 11%;
+      background: radial-gradient(ellipse at center, #f5f7df 37%, transparent 44%)
+        0 0 / 50% 25%;
+    }
+    .bubble {
+      position: absolute;
+      z-index: 3;
+      top: 21%;
+      left: 51%;
+      width: 33%;
+      height: 33%;
+      border-radius: 19px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9%;
+      background: #28564a;
+      box-shadow: 0 8px 14px #16382e25;
+    }
+    .bubble::after {
+      content: "";
+      position: absolute;
+      top: 95%;
+      left: 20%;
+      width: 17%;
+      aspect-ratio: 1;
+      background: inherit;
+      clip-path: polygon(0 0, 100% 0, 0 100%);
+    }
+    .bubble i {
+      width: 9%;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      background: #fff;
+    }
+    .name {
+      margin: 0 0 10px;
+      color: #3b6656;
+      font-size: clamp(0.95rem, 2.7vw, 1.06rem);
+      font-weight: 700;
+      line-height: 1.55;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(3.25rem, 11vw, 5rem);
+      letter-spacing: -0.09em;
+      line-height: 1.1;
+      font-weight: 800;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="art" aria-hidden="true">
+      <div class="sun"></div>
+      <div class="hill"></div>
+      <div class="tower short"></div>
+      <div class="tower"></div>
+      <div class="hill front"></div>
+      <div class="bubble"><i></i><i></i><i></i></div>
+    </div>
+    <p class="name">파크리오 규약·규정 챗봇</p>
+    <h1>준비 중</h1>
+  </main>
+</body>
+</html>
